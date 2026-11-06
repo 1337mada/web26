@@ -56,3 +56,12 @@ document.querySelectorAll(".copy").forEach(b=>b.addEventListener("click",()=>{
   if(!navigator.clipboard){sel();return;}
   navigator.clipboard.writeText(t).then(()=>{b.textContent="Copiat";setTimeout(()=>b.textContent="Copiază",1500)}).catch(sel);
 }));
+const lb=document.getElementById("lb");
+if(lb&&lb.showModal){
+  const im=document.getElementById("lbImg"),cap=document.getElementById("lbCap");
+  document.querySelectorAll(".g-item").forEach(a=>a.addEventListener("click",e=>{
+    e.preventDefault();im.src=a.getAttribute("href");im.alt=a.dataset.cap;cap.textContent=a.dataset.cap;lb.showModal();
+  }));
+  document.getElementById("lbClose").addEventListener("click",()=>lb.close());
+  lb.addEventListener("click",e=>{if(e.target===lb)lb.close()});
+}
