@@ -4,14 +4,16 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Geoconstruct Craiova – Studii geotehnice, expertize A1 și Af, proiectare</title>
-<meta name="description" content="Geoconstruct Craiova: studii geotehnice cu laborator propriu grad II, expertize și verificări tehnice A1 și Af, proiectare structurală și topografie. Lucrăm în toată țara.">
+<meta name="description" content="Geoconstruct Craiova: studii geotehnice cu laborator propriu grad II, expertize și verificări tehnice A1 și Af, proiectare structurală și de infrastructură, ridicări topografice. Lucrăm în toată țara.">
 <link rel="canonical" href="https://geoconstructcraiova.ro/">
+<link rel="icon" href="img/favicon.png" type="image/png">
 <meta property="og:title" content="Geoconstruct Craiova – Studii geotehnice, expertize A1 și Af, proiectare">
-<meta property="og:description" content="Geoconstruct Craiova: studii geotehnice cu laborator propriu grad II, expertize și verificări tehnice A1 și Af, proiectare structurală și topografie. Lucrăm în toată țara.">
-<meta property="og:image" content="https://images.unsplash.com/photo-1697045314415-3f8d95f1a6aa?auto=format&fit=crop&w=1200&q=70">
+<meta property="og:description" content="Geoconstruct Craiova: studii geotehnice cu laborator propriu grad II, expertize și verificări tehnice A1 și Af, proiectare structurală și de infrastructură, ridicări topografice. Lucrăm în toată țara.">
+<meta property="og:image" content="https://geoconstructcraiova.ro/img/proiecte/analiza-deplasari.jpg">
 <meta property="og:locale" content="ro_RO">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Libre+Franklin:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -20,85 +22,114 @@
   <a href="mailto:geoconstruct_craiova@yahoo.com">geoconstruct_craiova@yahoo.com</a>
   <span>Str. Păltiniș nr. 31, Craiova, Dolj</span>
 </div></div>
-
 <header class="site"><div class="wrap">
-  <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true"></span><span><b>Geoconstruct</b><small>Craiova · din 2002</small></span></a>
+  <a class="brand" href="index.html"><img src="img/sigla.png" alt="" width="46" height="46"><span><b>Geoconstruct</b><small>Craiova · din 2002</small></span></a>
   <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="nav">Meniu</button>
-  <nav class="main" id="nav">
+  <nav class="main" id="nav" aria-label="Meniu principal">
     <a href="index.html" aria-current="page">Acasă</a>
-    <a href="servicii.html">Servicii</a>
+    <div class="has-sub"><a href="servicii.html">Servicii</a><button class="sub-toggle" aria-expanded="false" aria-label="Deschide submeniul Servicii"><svg viewBox="0 0 10 10" aria-hidden="true"><path d="M1 3l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5"/></svg></button>
+      <ul class="sub"><li><a href="geotehnice.html"><span>SG</span>Geotehnice</a></li><li><a href="expertizare.html"><span>A1·Af</span>Expertizare</a></li><li><a href="proiectare.html"><span>PT</span>Proiectare</a></li><li><a href="topografie.html"><span>RT</span>Topografie</a></li></ul></div>
     <a href="portofoliu.html">Portofoliu</a>
     <a href="despre.html">Despre noi</a>
     <a href="contact.html">Contact</a>
   </nav>
 </div></header>
-
 <main>
-<section class="hero" style="--img:url('https://images.unsplash.com/photo-1697045314415-3f8d95f1a6aa?auto=format&fit=crop&w=2200&q=70')"><div class="wrap">
-    <div class="hero-copy">
-      <span class="eyebrow">Geotehnică · Expertize · Proiectare</span>
-      <h1>Știm ce e sub fundația ta.</h1>
-      <p>Studii geotehnice cu laborator propriu atestat, expertize și verificări tehnice A1 și Af, proiecte de rezistență pentru clădiri din zidărie, beton armat, metal sau lemn. Lucrăm în toată țara.</p>
-      <div class="btn-row">
-        <a class="btn btn-primary" href="contact.html">Cere o ofertă</a>
-        <a class="btn btn-light" href="servicii.html">Vezi serviciile</a>
+<section class="hero grid-paper"><div class="wrap">
+  <div class="hero-copy">
+    <span class="eyebrow">Geotehnică · Expertize A1 și Af · Proiectare · Topografie</span>
+    <h1>Știm ce e sub <em>fundația</em> ta.</h1>
+    <p>Studii geotehnice cu laborator propriu atestat, expertize și verificări tehnice A1 și Af, proiecte de rezistență și de infrastructură, ridicări topografice. Din 2002, în toată țara.</p>
+    <div class="btn-row"><a class="btn btn-primary" href="contact.html">Cere o ofertă <span class="arrow">→</span></a><a class="btn btn-ghost" href="servicii.html">Vezi serviciile</a></div>
+  </div>
+  <div class="drawing">
+    <div class="sheet"><div class="sheet-in">
+      <canvas id="fem" role="img" aria-label="Model cu elemente finite al unei fundații continue, cu distribuția presiunii verticale în teren"></canvas>
+      <div class="cartus">
+        <div><small>Proiectant</small><b>GEOCONSTRUCT S.R.L.</b></div>
+        <div><small>Specialitate</small><b>Geotehnică · Rezistență</b></div>
+        <div><small>Planșa</small><b>MEF-01</b></div>
+        <div><small>Data</small><b class="datenow">11.2026</b></div>
       </div>
-    </div>
-    <figure class="log" aria-label="Exemplu ilustrativ de fișă de foraj">
-      <div class="log-head"><span>Fișă foraj F1</span><span>exemplu</span></div>
-      <div class="log-row"><div class="log-depth">0.00</div><div class="log-layer l-top" style="height:26px"></div><div class="log-desc">Sol vegetal<span>0.00 – 0.40 m</span></div></div>
-      <div class="log-row"><div class="log-depth">-0.40</div><div class="log-layer l-clay" style="height:74px"></div><div class="log-desc">Argilă prăfoasă, cafenie, plastic vârtoasă<span>0.40 – 2.10 m</span></div></div>
-      <div class="log-row"><div class="log-depth">-2.10</div><div class="log-layer l-sand" style="height:90px"></div><div class="log-desc">Nisip fin, galben, îndesare medie <span class="water">▽ nivel apă -3.20 m</span></div></div>
-      <div class="log-row"><div class="log-depth">-4.80</div><div class="log-layer l-gravel" style="height:70px"></div><div class="log-desc">Pietriș cu nisip, îndesat<span>4.80 – 7.50 m</span></div></div>
-      <div class="log-row"><div class="log-depth">-7.50</div><div class="log-layer l-marl" style="height:44px"></div><div class="log-desc">Marnă cenușie<span>&gt; 7.50 m</span></div></div>
-      <figcaption class="log-foot"><span>SPT · CPT · probe netulburate</span><span>Lab. grad II</span></figcaption>
-    </figure>
-  </div></section>
+    </div></div>
+    <svg class="pencil" viewBox="0 0 420 44" aria-hidden="true">
+<path d="M0 22 L9 20.4 L9 23.6 Z" style="fill:var(--ink)"/>
+<path d="M9 18.5 L36 11 V33 L9 25.5 Z" style="fill:var(--rule-2);stroke:var(--ink);stroke-width:1"/>
+<rect x="36" y="9" width="66" height="26" rx="2" style="fill:var(--ink-2)"/>
+<g style="stroke:var(--sheet);stroke-width:1;opacity:.45"><path d="M40 10 V34"/><path d="M45 10 V34"/><path d="M50 10 V34"/><path d="M55 10 V34"/><path d="M60 10 V34"/><path d="M65 10 V34"/><path d="M70 10 V34"/><path d="M75 10 V34"/><path d="M80 10 V34"/><path d="M85 10 V34"/><path d="M90 10 V34"/><path d="M95 10 V34"/></g>
+<rect x="102" y="7" width="240" height="30" style="fill:var(--ink)"/>
+<rect x="102" y="11" width="240" height="4" style="fill:var(--sheet);opacity:.14"/>
+<rect x="102" y="27" width="240" height="2" style="fill:var(--sheet);opacity:.08"/>
+<text x="150" y="26" style="font:500 9px var(--f-mono);fill:var(--gold);letter-spacing:1px">0.5 · HB</text>
+<rect x="342" y="7" width="9" height="30" style="fill:var(--gold)"/>
+<rect x="351" y="9" width="54" height="26" rx="4" style="fill:var(--ink)"/>
+<path d="M300 4 H392 a3 3 0 0 1 0 6 H300 Z" style="fill:var(--rule-2);stroke:var(--ink);stroke-width:.8"/>
+</svg>
+  </div>
+</div></section>
 
-  <section class="facts"><div class="wrap">
-    <div class="fact"><b class="years">24</b><span>ani de activitate</span></div>
-    <div class="fact"><b>Grad II</b><span>laborator geotehnic propriu</span></div>
-    <div class="fact"><b>A1 · Af</b><span>verificări și expertize</span></div>
-    <div class="fact"><b>RO</b><span>lucrări în toată țara</span></div>
-  </div></section>
+<section class="facts"><div class="wrap">
+  <div class="fact"><b class="years">24</b><span>ani de activitate</span></div>
+  <div class="fact"><b>Grad II</b><span>laborator geotehnic propriu</span></div>
+  <div class="fact"><b>A1 · Af</b><span>verificări și expertize</span></div>
+  <div class="fact"><b>ISO 9001</b><span>sistem de management al calității</span></div>
+</div></section>
 
-  <section><div class="wrap">
-    <div class="section-head"><span class="eyebrow">Domenii de activitate</span><h2>Ce facem</h2></div>
-    <div class="cards">
-      <a class="card" href="servicii.html#geotehnica"><img src="https://images.unsplash.com/photo-1790197042098-7b3fe5141650?auto=format&fit=crop&w=800&q=70" alt="Instalație de foraj cu burghiu elicoidal" loading="lazy"><div><span class="code">SG</span><h3>Studii geotehnice</h3><p>Foraje, penetrări SPT și CPT, analize în laboratorul propriu, pentru clădiri, drumuri, parcuri fotovoltaice și eoliene.</p></div></a>
-      <a class="card" href="servicii.html#expertize"><img src="https://images.unsplash.com/photo-1774639081187-2c2b76e15b95?auto=format&fit=crop&w=800&q=70" alt="Încercare cu ultrasunete în laborator" loading="lazy"><div><span class="code">A1 · Af</span><h3>Verificări și expertize</h3><p>Expertize pentru beton, beton armat, zidărie și lemn, cu încercări nedistructive: pahometrie, sclerometrie, ultrasunete.</p></div></a>
-      <a class="card" href="servicii.html#proiectare"><img src="img/proiecte/momente-grinzi.jpg" alt="Diagramă de momente încovoietoare pe grinzi, model 3D" loading="lazy"><div><span class="code">PT</span><h3>Proiectare structurală</h3><p>Construcții civile, industriale și hidrotehnice, drumuri, amenajări și consolidări, cu asistență tehnică pe execuție.</p></div></a>
-      <a class="card" href="servicii.html#topografie"><img src="https://images.unsplash.com/photo-1660692846051-06c407a71cbc?auto=format&fit=crop&w=800&q=70" alt="Stație totală Trimble pe teren" loading="lazy"><div><span class="code">RT</span><h3>Ridicări topografice</h3><p>Stații totale și stații GPS de precizie, cu prelucrarea datelor în programe specializate.</p></div></a>
-    </div>
-  </div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Servicii</span><h2>Patru specialități, un singur birou</h2><p class="muted">Ridicarea topografică, studiul geotehnic și proiectul se fac în aceeași firmă, așa că datele trec de la teren la planșă fără pierderi.</p></div>
+  <div class="svc-cards">
+    <a class="svc-card" href="geotehnice.html"><img src="img/echipamente/pagani-tg63-100.jpg" alt="Penetrometrul Pagani TG 63-100 pe un amplasament" loading="lazy" style="object-position:50% 30%"><div class="body"><span class="code">SG</span><h3>Studii geotehnice</h3><p>Foraje, penetrări CPT și SPT, încercări în laboratorul propriu de grad II.</p><span class="more">Detalii →</span></div></a>
+    <a class="svc-card" href="expertizare.html"><img src="img/echipamente/ultrasunete.jpg" alt="Aparat de testare cu ultrasunete pe o probă" loading="lazy"><div class="body"><span class="code">A1 · Af</span><h3>Expertizare</h3><p>Expertize și verificări tehnice, cu încercări nedistructive pe structura existentă.</p><span class="more">Detalii →</span></div></a>
+    <a class="svc-card" href="proiectare.html"><img src="img/proiecte/momente-grinzi.jpg" alt="Diagrame de momente pe grinzile unui model 3D" loading="lazy"><div class="body"><span class="code">PT</span><h3>Proiectare</h3><p>Structuri de rezistență și proiecte complexe de infrastructură, calculate prin metoda elementului finit.</p><span class="more">Detalii →</span></div></a>
+    <a class="svc-card" href="topografie.html"><img src="img/proiecte/plan-topo-5.jpg" alt="Plan de situație cu curbe de nivel" loading="lazy"><div class="body"><span class="code">RT</span><h3>Topografie</h3><p>Ridicări cu stații totale și GPS de precizie, planuri de situație și documentații cadastrale.</p><span class="more">Detalii →</span></div></a>
+  </div>
+</div></section>
 
-  <section class="studio"><div class="wrap">
-    <div class="section-head"><span class="eyebrow">Din biroul de proiectare</span><h2>Calculăm fiecare structură în model 3D</h2><p class="muted">Analize realizate de inginerii noștri pe proiecte reale: deplasări sub încărcări seismice, eforturi axiale în stâlpi, momente încovoietoare în grinzi.</p></div>
-    <div class="studio-grid">
-      <figure class="media big"><img src="img/proiecte/analiza-deplasari.jpg" alt="Model 3D al unei clădiri în cadre cu harta deplasărilor" loading="lazy" style="aspect-ratio:1152/593;object-fit:contain"><figcaption>Deplasări laterale ale structurii, în centimetri</figcaption></figure>
-      <figure class="media "><img src="img/proiecte/eforturi-fz.jpg" alt="Eforturi axiale în elementele structurii" loading="lazy" style="aspect-ratio:1083/601;object-fit:contain"><figcaption>Eforturi axiale Fz, în kN</figcaption></figure>
-      <figure class="media "><img src="img/proiecte/momente-parter.jpg" alt="Momente încovoietoare la nivelul parterului" loading="lazy" style="aspect-ratio:1282/660;object-fit:contain"><figcaption>Momente My la parter, în kNm</figcaption></figure>
-    </div>
-  </div></section>
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Ce primești de la noi</span><h2>Fișa complexă a forajului</h2><p class="muted">Pentru fiecare foraj întocmim fișa cu profilul litologic și rezultatele încercărilor din laborator. Ea stă la baza recomandărilor de fundare din studiul geotehnic.</p></div>
+  <div class="doc-wrap"><figure class="plate "><img src="img/documente/fisa-foraj.jpg" alt="Fișa complexă a forajului FG 1, cu profil litologic, granulozitate, caracteristici fizice și mecanice" loading="lazy" width="1800" height="952"><figcaption><span>Fișa forajului FG 1 · amplasament Leleasca</span><b>FG 1</b></figcaption></figure></div>
+  <div class="callouts">
+    <div><b>Profil litologic și apa subterană</b><p>Straturile întâlnite, grosimea lor și nivelul apei la data forării.</p></div>
+    <div><b>Caracteristici fizice</b><p>Granulozitate, umiditate, plasticitate, greutate volumetrică, porozitate.</p></div>
+    <div><b>Caracteristici mecanice</b><p>Modulul edometric, unghiul de frecare internă, coeziunea și rezultatele penetrărilor SPT.</p></div>
+  </div>
+</div></section>
 
-  <section><div class="wrap">
-    <div class="section-head"><span class="eyebrow">Lucrări recente</span><h2>Din portofoliu</h2></div>
-    <div id="recent"></div>
-    <div class="btn-row" style="margin-top:28px"><a class="btn btn-ghost" href="portofoliu.html">Toate lucrările</a></div>
-  </div></section>
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Din biroul de proiectare</span><h2>Fiecare structură, calculată în model 3D</h2><p class="muted">Analize făcute de inginerii noștri pe proiecte reale: deplasări sub acțiunea seismică, eforturi axiale în stâlpi, momente încovoietoare în grinzi.</p></div>
+  <div class="studio-grid">
+    <figure class="plate "><img src="img/proiecte/analiza-deplasari.jpg" alt="Model 3D al unei clădiri în cadre, cu harta deplasărilor" loading="lazy" width="1152" height="593"><figcaption><span>Deplasări laterale ale structurii, în cm</span><b>Fig. 1</b></figcaption></figure>
+    <figure class="plate "><img src="img/proiecte/eforturi-fz.jpg" alt="Eforturi axiale în elementele structurii" loading="lazy" width="1083" height="601"><figcaption><span>Eforturi axiale Fz, în kN</span><b>Fig. 2</b></figcaption></figure>
+    <figure class="plate "><img src="img/proiecte/momente-parter.jpg" alt="Momente încovoietoare la nivelul parterului" loading="lazy" width="1282" height="660"><figcaption><span>Momente My la parter, în kNm</span><b>Fig. 3</b></figcaption></figure>
+  </div>
+  <p style="margin-top:22px"><a class="more" href="proiectare.html">Despre metoda elementului finit și etapele de proiectare →</a></p>
+</div></section>
 
-  <section><div class="wrap">
-    <div class="section-head"><span class="eyebrow">Au lucrat cu noi</span><h2>Beneficiari</h2></div>
-    <div class="logos"><span class="logo"><img src="img/clienti/kaufland.jpg" alt="Kaufland" loading="lazy"></span><span class="logo"><img src="img/clienti/metro.jpg" alt="Metro" loading="lazy"></span><span class="logo"><img src="img/clienti/selgros.jpg" alt="Selgros" loading="lazy"></span><span class="logo"><img src="img/clienti/billa.jpg" alt="Billa" loading="lazy"></span><span class="logo"><img src="img/clienti/lafarge.jpg" alt="Lafarge" loading="lazy"></span><span class="logo"><img src="img/clienti/electrica.jpg" alt="Electrica" loading="lazy"></span><span class="logo"><img src="img/clienti/transelectrica.jpg" alt="Transelectrica" loading="lazy"></span><span class="logo"><img src="img/clienti/elpreco.jpg" alt="Elpreco" loading="lazy"></span></div>
-  </div></section>
+<section class="sec alt"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Lucrări recente</span><h2>Din portofoliu</h2></div>
+  <div id="recent"></div>
+  <div class="btn-row" style="margin-top:28px"><a class="btn btn-ghost" href="portofoliu.html">Toate lucrările</a></div>
+</div></section>
+
+<section class="sec"><div class="wrap">
+  <div class="sec-head"><span class="eyebrow">Au lucrat cu noi</span><h2>Beneficiari</h2></div>
+  <div class="logos"><span class="logo"><img src="img/clienti/kaufland.jpg" alt="Kaufland" loading="lazy"></span><span class="logo"><img src="img/clienti/metro.jpg" alt="Metro" loading="lazy"></span><span class="logo"><img src="img/clienti/selgros.jpg" alt="Selgros" loading="lazy"></span><span class="logo"><img src="img/clienti/billa.jpg" alt="Billa" loading="lazy"></span><span class="logo"><img src="img/clienti/lafarge.jpg" alt="Lafarge" loading="lazy"></span><span class="logo"><img src="img/clienti/electrica.jpg" alt="Electrica" loading="lazy"></span><span class="logo"><img src="img/clienti/transelectrica.jpg" alt="Transelectrica" loading="lazy"></span><span class="logo"><img src="img/clienti/elpreco.jpg" alt="Elpreco" loading="lazy"></span></div>
+</div></section>
+<section class="sec"><div class="wrap"><div class="cta">
+  <div class="copyblock"><span class="eyebrow" style="color:var(--gold)">Consultanță gratuită</span><h2>Spune-ne ce construiești și unde</h2><p>Îți spunem ce studii, avize și proiecte îți trebuie. Prima discuție e gratuită.</p></div>
+  <div class="btn-row"><a class="btn btn-primary" href="contact.html">Cere o ofertă <span class="arrow">→</span></a></div>
+</div></div></section>
 </main>
-
 <footer><div class="wrap">
-  <p>© <span class="yearnow">2026</span> S.C. Geoconstruct S.R.L. · Str. Păltiniș nr. 31, Craiova · 0745 506 714</p>
-  <p>Studii geotehnice · Expertize A1 și Af · Proiectare · Topografie</p>
-  <p class="credit">Fotografiile de șantier și echipamente sunt de pe Unsplash. Analizele structurale și planurile sunt lucrări Geoconstruct.</p>
+  <div class="tblock">
+    <div><small>Proiectant</small><div class="firm"><img src="img/sigla.png" alt="" width="44" height="44"><div><b>Geoconstruct S.R.L.</b><br><span class="muted" style="color:var(--on-dark-2);font-size:.86rem">Geotehnică · Expertize · Proiectare · Topografie</span></div></div></div>
+    <div><small>Contact</small><ul><li><a href="tel:+40745506714">0745 506 714</a></li><li><a href="tel:+40251461756">0251 461 756</a></li><li><a href="mailto:geoconstruct_craiova@yahoo.com">geoconstruct_craiova@yahoo.com</a></li></ul></div>
+    <div><small>Servicii</small><ul><li><a href="geotehnice.html">Studii geotehnice</a></li><li><a href="expertizare.html">Expertizare</a></li><li><a href="proiectare.html">Proiectare</a></li><li><a href="topografie.html">Topografie</a></li></ul></div>
+    <div><small>Sediu</small><ul><li>Str. Păltiniș nr. 31</li><li>Craiova, Dolj</li><li><a href="https://maps.app.goo.gl/gsiWmRmgekqbg65XA" target="_blank" rel="noopener">Vezi pe hartă ↗</a></li></ul></div>
+  </div>
+  <div class="fine"><span>© <span class="yearnow">2026</span> S.C. Geoconstruct S.R.L. · Craiova</span><span>Laborator geotehnic grad II · ISO 9001</span></div>
 </div></footer>
-<dialog id="lb" aria-label="Imagine mărită"><button class="lb-close" id="lbClose" aria-label="Închide">Închide ✕</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
+<dialog id="lb" aria-label="Imagine mărită"><button class="lb-close" id="lbClose">Închide ✕</button><img id="lbImg" alt=""><p id="lbCap"></p></dialog>
 <script src="script.js"></script>
 </body>
 </html>
